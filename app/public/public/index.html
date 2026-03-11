@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Virtual Background Photo Editor</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:#f0f0f0;
+}
+
+img{
+max-width:400px;
+margin-top:20px;
+}
+
+.theme-btn{
+margin:5px;
+padding:10px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Virtual Background Photo Editor</h1>
+
+<input type="file" id="upload">
+
+<br><br>
+
+<img id="photo">
+
+<h2>Select Background Theme</h2>
+
+<button class="theme-btn" onclick="changeBackground('themes/beach.jpg')">Beach</button>
+
+<button class="theme-btn" onclick="changeBackground('themes/space.jpg')">Space</button>
+
+<button class="theme-btn" onclick="changeBackground('themes/mountains.jpg')">Mountains</button>
+
+<button class="theme-btn" onclick="changeBackground('themes/forest.jpg')">Forest</button>
+
+<button class="theme-btn" onclick="changeBackground('themes/city.jpg')">City</button>
+
+<button class="theme-btn" onclick="changeBackground('themes/cyberpunk.jpg')">Cyber City</button>
+
+<button class="theme-btn" onclick="changeBackground('themes/sunset.jpg')">Sunset</button>
+
+<button class="theme-btn" onclick="changeBackground('themes/fantasy.jpg')">Fantasy</button>
+
+<script>
+
+let uploadedImage = document.getElementById("photo")
+
+document.getElementById("upload").onchange = function(e){
+uploadedImage.src = URL.createObjectURL(e.target.files[0])
+}
+
+function changeBackground(theme){
+document.body.style.backgroundImage = "url(" + theme + ")"
+document.body.style.backgroundSize = "cover"
+}
+
+</script>
+
+</body>
+</html>
