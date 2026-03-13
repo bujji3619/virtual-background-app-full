@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .terraform/
 *.tfstate
 *.tfstate.backup
@@ -7,6 +8,14 @@
 *.tfstate.backup
 *.log
 .terraform/
+=======
+# .gitignore
+.terraform/
+*.tfstate
+*.tfstate.*
+*.backup
+*.log.terraform/
+>>>>>>> virtual-background-app/main
 *.tfstate
 *.tfstate.backup
 *.log
