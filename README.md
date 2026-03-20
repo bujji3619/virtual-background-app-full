@@ -133,6 +133,4 @@ If you like this project, give it a ⭐ on GitHub!
 
 This project is open-source and available under the MIT License.
 
-🚀 Resume Description
 
-Developed a real-time virtual background web application using JavaScript and WebRTC, enabling background replacement and blur without a green screen. Implemented ML-based segmentation techniques for efficient browser-side video processing.
